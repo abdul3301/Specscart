@@ -48,7 +48,6 @@ main {
   position: absolute;
   inset: 0;
   width: var(--position);
-  filter: grayscale(100%);
 }
 
 .slider {
@@ -60,10 +59,10 @@ main {
   height: 100%;
 }
 
-/* .slider:focus-visible ~ .slider-button {
+.slider:focus-visible ~ .slider-button {
   outline: 5px solid rgb(255, 1, 1);
   outline-offset: 3px;
-} */
+}
 
 .slider-line {
   position: absolute;
@@ -71,7 +70,7 @@ main {
   width: 0.2rem;
   height: 100%;
   background-color: #fff;
-  /* z-index: 10; */
+  z-index: 10;
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
