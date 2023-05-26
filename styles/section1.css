@@ -1,7 +1,8 @@
 .section1 {
   position: relative;
   display: flex;
-  /* background-color: rgb(237, 233, 233); */
+  background-color: rgb(249, 253, 254);
+  /* background-color: blueviolet; */
   height: 500px;
   width: 100%;
   top: 60px;
@@ -9,16 +10,15 @@
   /* border: 1px solid; */
 }
 .left-part {
-  position: relative;
+  /* position: absolute; */
   /* border: 1px solid; */
   display: flex;
   flex-direction: column;
-  height: 320px;
+  height: 100%;
   margin-top: 0;
-  /* flex: 1; */
   width: 50%;
   padding: 60px 0px 100px 100px;
-  background-color: rgb(249, 253, 254);
+  /* background-color: rgb(249, 253, 254); */
 }
 .home-trial-text {
   margin-left: 80px;
@@ -95,30 +95,31 @@
 }
 
 .right-part {
-  position: relative;
+  /* position: absolute; */
   /* border: 1px solid; */
+  position: relative;
+  height: 100%;
   display: flex;
   width: 49%;
-  /* flex: 1; */
   flex-direction: column;
   padding: 150px 0px 100px 100px;
-  background-color: rgb(249, 253, 254);
-  /* margin-left: 50%; */
-  height: 230px;
+  /* background-color: rgba(13, 160, 197, 0.712); */
+  /* height: 230px; */
 }
 
 .book {
   position: absolute;
   height: 250px;
-  top: 100px;
+  top: 20%;
   animation: 2s top-to-bottom;
   animation-timing-function: cubic-bezier(5, 5, 5, 5);
 }
 .plates {
   position: absolute;
   height: 151px;
-  top: 1000px;
-  left: 44px;
+  top: 51%;
+  z-index: -1;
+  right: 41%;
   animation: 2s bottom-to-top;
   animation-delay: 2s;
   animation-fill-mode: forwards;
@@ -128,7 +129,7 @@
   position: absolute;
   height: 155px;
   left: -1000px;
-  top: 128px;
+  top: 24%;
   animation: 2s right-to-left;
   animation-fill-mode: forwards;
   animation-delay: 4s;
@@ -137,16 +138,18 @@
 
 @keyframes top-to-bottom {
   from {
-    top: -1000px;
+    top: -5000px;
   }
 }
 
 @keyframes bottom-to-top {
   from {
     top: 1000px;
+    z-index: -1;
   }
   to {
-    top: 250px;
+    top: 51%;
+    z-index: 1;
   }
 }
 @keyframes right-to-left {
@@ -160,8 +163,9 @@
 
 .description {
   /* border: 1px solid; */
+  margin-top: 150px;
+  z-index: 100;
   text-align: center;
-  padding-top: 20px;
   height: 250px;
 }
 .description-title {

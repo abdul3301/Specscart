@@ -67,7 +67,7 @@ main {
 .slider-line {
   position: absolute;
   inset: 0;
-  width: 0.2rem;
+  width: 0.1rem;
   height: 100%;
   background-color: #fff;
   z-index: 10;

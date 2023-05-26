@@ -1,4 +1,44 @@
 body {
   margin-top: 0;
-  height: 1000px;
+  height: 2000px;
+}
+
+.section2-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.section2-span1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section2-span2 {
+  display: flex;
+  text-align: center;
+  padding: 20px 230px 40px 230px;
+  color: rgb(173, 153, 153);
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-text1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.container-text2 {
+  color: rgb(173, 153, 153);
+  margin-bottom: 20px;
+}
+.container-text3 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
