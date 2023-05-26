@@ -1,7 +1,8 @@
 .section1 {
   position: relative;
   display: flex;
-  background-color: rgb(249, 253, 254);
+  background-color: rgb(248, 252, 253);
+  box-shadow: inset 0px 0.1px 1000px 1px rgb(240, 245, 245);
   /* background-color: blueviolet; */
   height: 500px;
   width: 100%;
